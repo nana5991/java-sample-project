@@ -11,4 +11,3 @@ jobs:
       - name: Scan project using meterian cli git hub action
         uses: MeterianHQ/meterian-github-action@master
         #secrets: ["METERIAN_API_TOKEN"]
-        run: echo github action test
