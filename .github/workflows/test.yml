@@ -9,7 +9,7 @@ jobs:
             - name: Path test
               uses: MeterianHQ/meterian-github-action@action-update
               with:
-                entrypoint: entrypoint.sh
+                entrypoint: /entrypoint.sh
             # - name: Workspace test
             #   uses: MeterianHQ/meterian-github-action@action-update
             #   with:
