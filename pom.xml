@@ -49,11 +49,6 @@
         </dependency>
 
         <!-- adding new dependencies for test-->
-        <dependency>
-            <groupId>org.webjars.npm</groupId>
-            <artifactId>npm-registry-fetch</artifactId>
-            <version>6.0.2</version>
-        </dependency>
 
         <dependency>
             <groupId>org.wildfly.core</groupId>
