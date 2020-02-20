@@ -1,5 +1,10 @@
 name: Checkout Test
 description: Sample GitHub action to test repo checkout
+inputs:
+    myEnvVar:
+        description: test environment variable
+        required: false
+        default: my test env var
 runs:
     using: docker
     image: Dockerfile
