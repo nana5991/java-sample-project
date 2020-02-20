@@ -1,0 +1,5 @@
+name: Checkout Test
+description: Sample GitHub action to test repo checkout
+runs:
+    using: docker
+    image: Dockerfile

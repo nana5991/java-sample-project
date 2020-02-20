@@ -1,20 +1,16 @@
-name: Test
+name: Repo checkout test
 
 on: push
 
 jobs:
     my-test-job:
         runs-on: ubuntu-latest
+        name: A job to checkout and verify our repo files are present
         steps:
-            - name: Path test
-              run: |
-                  echo this is a test
-                  echo Current path
-                  pwd
-                  echo
-                  cd $(pwd)
-                  echo Workspace dir
-                  ls -al
+            - name: Checkout
+              uses: actions/checkout@v2
+            - name: Checking our repository
+              uses: ./
 
               #uses: MeterianHQ/meterian-github-action@action-update
               #with:
