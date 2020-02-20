@@ -7,9 +7,18 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Path test
-              uses: MeterianHQ/meterian-github-action@action-update
-              with:
-                entrypoint: /test_entrypoint.sh
+              run: |
+                  echo this is a test
+                  echo Current path
+                  pwd
+                  echo
+                  cd $(pwd)
+                  echo Workspace dir
+                  ls -al
+
+              #uses: MeterianHQ/meterian-github-action@action-update
+              #with:
+                #entrypoint: /test_entrypoint.sh
             # - name: Workspace test
             #   uses: MeterianHQ/meterian-github-action@action-update
             #   with:
