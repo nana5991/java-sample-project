@@ -14,7 +14,7 @@ jobs:
             - name: Checking environment variables
               uses: ./
               with:
-                entrypoint: envtest.sh
+                entrypoint: /envtest.sh
 
               #uses: MeterianHQ/meterian-github-action@action-update
               #with:
