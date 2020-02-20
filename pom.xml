@@ -55,12 +55,6 @@
             <version>6.0.2</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.wildfly.core</groupId>
-            <artifactId>wildfly-version</artifactId>
-            <version>11.0.0.Beta8</version>
-        </dependency>
-
     </dependencies>
 
 </project>
