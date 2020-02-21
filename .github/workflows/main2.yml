@@ -14,6 +14,5 @@ jobs:
             uses: MeterianHQ/meterian-github-action@new-dockerfile-cache-test
             env: 
                 METERIAN_API_TOKEN: ${{ secrets.METERIAN_API_TOKEN }}
-          # ** see what works better: parameter sent that becomes env var or env var set in the workflow **
             with: 
                 cli_args: --project-url=tmp
