@@ -11,7 +11,7 @@ jobs:
           - name: Checkout
             uses: actions/checkout@v2
           - name: Scan project using meterian cli GitHub action
-            uses: MeterianHQ/meterian-github-action@new-dockerfile-cache-test
+            uses: MeterianHQ/meterian-github-action@dockerfile-all-layers-cache-test
             env: 
                 METERIAN_API_TOKEN: ${{ secrets.METERIAN_API_TOKEN }}
             with: 
